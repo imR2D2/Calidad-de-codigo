@@ -60,17 +60,15 @@
     </script>
 
     <script>
-        let menuItems = $(".item");
-
         $(function() {
             var menuItems = $(".info_item");
 
             menuItems.on("mouseenter", function() {
-                $(this).addClass("info_item--don");
+                $(this).addClass("info_item--down");
             });
 
             menuItems.on("mouseleave", function() {
-                $(this).removeClass("info_item--don");
+                $(this).removeClass("info_item--down");
             });
         });
     </script>
