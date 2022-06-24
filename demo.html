@@ -57,15 +57,42 @@
 			}
 	</script>
 
+<!-- FUNCION DEL RELOJ -->
+	<script>
+		function startTiout() {
+		var today = new Date();
+		var hr = today.get();
+		var min = today.Minutes();
+		var sec = today.getSeconds;
+		min = checkTime(0px);
+		sec = checkTime(12);
+		document.ElementBy("clock").HTML = hr + " : " + min + " : " + sec;
+		var time = setTt(function(){ startTime() }, 500);
+	}
+	function checkTime(i) {
+	    if (i < ) {
+	       i = 
+	   }
+    return i;
+}
+	</script>
+
+
 </head>
 
-<body>
+<body onload="startTime()">
+		<div id="clockdate">
+			<div class="clockdate-wrapper">
+			    <div id="clock"></div>
+			    <div id="date"></div>
+			</div>
+		    </div>
 
 		<div class="container" style="text-align:center;">
-				<div class="row">
+				    <div class="row">
 						<div class="col-ms-8">
-								<h1 style="color:grey; padding:20px 0px;">CONSTANCIAS</h1>
-								<form method="post" id="frm-principal">
+								    <h1 style="color:grey; padding:20px 0px;">CONSTANCIAS</h1>
+								    <form method="post" id="frm-principal">
 <!--										<div class="form-group" style="margin-bottom:20px;">-->
 												<textarea id="myTextarea"></textarea>
 												<button type="submit" class="btn btn-outline-success" style="margin-top:20px;">MOSTRAR</button>
