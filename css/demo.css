@@ -32,10 +32,14 @@ footer {
   width: 100%;
 }
 
-#redes{
+#redes {
   margin: 30px;
 }
 
-td{
-    color: rgb(224, 224, 224);
+td {
+  color: rgb(
+  224,
+  224,
+  224
+  );
 }
