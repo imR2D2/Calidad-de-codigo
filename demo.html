@@ -76,34 +76,42 @@
 </head>
 
 <body>
-
-    <div class="container" style="text-align:center;">
-        <aside class="info">
-            <div class="info_item info_item--info">
-                <img src="img/information.png" alt="info-icon">
-                <p>?</p>
-            </div>
-        </aside>
-        <div class="row">
-            <div class="col-ms-8">
-                <h1 style="color:grey; padding:20px 0px;">CONSTANCIAS</h1>
-                <form method="post" id="frm-principal">
-                    <!--										<div class="form-group" style="margin-bottom:20px;">-->
-                    <textarea id="myTextarea"></textarea>
-                    <button type="submit" class="btn btn-outline-success" style="margin-top:20px;">MOSTRAR</button>
-                    <!--										</div>-->
-                    <button type="button" onclick="generarPDF()" id="btn-enviar" class="btn btn-outline-danger" style="margin-top:20px;">ABRIR</button>
-                    <button type="button" class="btn btn-outline-danger" style="margin-top:20px;">DESCARGAR</button>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">Generador de Constancias</a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-ms-8">
-                <div id="texto" style="border:1px solid gray; padding:30px; margin-top:20px;">
+        </nav>
+    </header>
+    <main>
+        <br>
+        <div class="container" style="text-align:center;">
+            <div class="row">
+                <div class="col-ms-8">
+                    <h1 style="color:grey; padding:20px 0px;">CONSTANCIAS</h1>
+                    <form method="post" id="frm-principal">
+                        <!--										<div class="form-group" style="margin-bottom:20px;">-->
+                        <textarea id="myTextarea"></textarea>
+                        <button type="submit" class="btn btn-outline-success" style="margin-top:20px;">MOSTRAR</button>
+                        <!--										</div>-->
+                        <button type="button" onclick="generarPDF()" id="btn-enviar" class="btn btn-outline-danger" style="margin-top:20px;">ABRIR</button>
+                        <button type="button" class="btn btn-outline-danger" style="margin-top:20px;">DESCARGAR</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-ms-8">
+                    <div id="texto" style="border:1px solid gray; padding:30px; margin-top:20px;">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
 
 </body>
 
