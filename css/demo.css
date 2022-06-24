@@ -1,6 +1,41 @@
-/*
-AQUI ESTARA TODO EL CSS PURO
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-Lo que hice en el archivo demo.html fue agregar CSS con la propiedad STYLES
-pero una vez finalizado la funcion principal maquetare y segmentare todo en su lugar
- */
+footer {
+  display: block;
+  margin: 0;
+  height: 100px;
+  width: 100%;
+  margin-top: 30px;
+  background: black;
+  position: relative;
+  bottom: 0;
+  align-self: flex-end;
+}
+
+.referencias > a {
+  text-decoration: none;
+  color: white;
+}
+
+.div {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.referencias {
+  vertical-align: middle;
+  width: 100%;
+}
+
+#redes{
+  margin: 30px;
+}
+
+td{
+    color: rgb(224, 224, 224);
+}
